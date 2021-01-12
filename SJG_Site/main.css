@@ -1,0 +1,585 @@
+@charset "utf-8";
+
+/*NAVBAR*/
+nav {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #222222;
+	font-family: 'Red Hat Display', sans-serif;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+.navlogo{
+	width: 175px; 
+	height: auto;
+	transition: width 0s, height 0s;
+}
+
+.navlogo:hover {
+	opacity: 50%;
+	width: 160px;
+}
+
+links a {
+	color: white;
+	font-size: 28px;
+	padding: 0px 20px;
+}
+
+media a {
+	padding: 0px 10px;
+}
+
+media a:hover {
+	opacity: 50%;
+}
+
+links a:hover {
+	color: #a75bd9;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.active {
+	color: #a75bd9;
+}
+/*NAVBAR ENDS*/
+
+/*INDEX*/
+.banner {
+	width: 100%;
+	position: relative;
+	padding-top: 200px;
+	padding-bottom: 50px;
+	background-image: url("images/clouds/clouds2.png");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	background-color: #4cd4f9;
+	animation: clouds 50s linear infinite;
+}
+
+.banner .logo img { 
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	margin-bottom: 200px;
+  	width: 30%;
+}
+
+@keyframes clouds {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+.game_banner {
+	position: relative;
+	width: 60%;
+	height: 200px;
+	display: block;
+	margin: 25px auto;
+	border: solid 5px black;
+	cursor: pointer;
+}
+
+.game_banner img {
+	height: 100%;
+	width: 100%;
+	width: 200px;
+	z-index: 1;
+	display: block;
+	margin: auto;
+}
+
+.game_banner h1 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+  	top: 50%;
+  	left: 50%;
+	padding-top: 55px;
+	opacity: 0%;
+	transform: translate(-50%, -50%);
+	transition-duration: .5s;
+	text-align: center;
+	color: white;
+	text-shadow: 
+		#333 1px 1px,
+		#333 2px 2px,
+		#333 3px 3px,
+		#333 4px 4px,
+		#333 5px 5px,
+		#333 5px 5px,
+		#333 5px 6px,
+		#333 5px 7px,
+		#333 8px 8px,
+		#333 9px 9px;
+	font-size: 64px;
+	font-family: 'Red Hat Display', sans-serif
+}
+
+.game_banner h1:hover {
+	opacity: 100%;
+}
+
+#last_slice {
+	background: url("images/last_slice/texture.png");
+}
+
+#floaty {
+	background: url("images/floaty/texture2.png");
+}
+
+#floaty img {
+	height: auto;
+	padding-top: 25px;
+	
+}
+
+#SBW {
+	background: url("images/SBW/texture.png");
+}
+
+#joke {
+	background: url("images/TINAJ/texture.png");
+}
+
+#joke img {
+	width: 185px;
+	height: auto;
+	padding-top: 5px;
+}
+
+#siren {
+	background: url("images/siren/texture.png");
+}
+
+#siren img {
+	width: 400px;
+	height: auto;
+	padding-top: 30px;
+}
+
+#basher {
+	background: url("images/basher/texture.png");
+}
+
+#basher img {
+	width: 225px;
+	height: auto;
+	padding-bottom: 10px;
+}
+
+#wood {
+	background: url("images/wood/texture.png");
+}
+
+#wood img {
+	width: 225px;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+/*INDEX ENDS*/
+
+/*ABOUT*/
+section {
+	height: 20em;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	background-color: #a75bd9;
+}
+
+section h1 {
+	margin: 0;
+	padding-top: 75px;
+	font-size: 72px;
+	letter-spacing: 2.5px;
+	color: white;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+about {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	padding: 50px 0px;
+	text-align: center;
+	font-size: 24px;
+	width: 50%;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+row {
+	display: flex;
+  	-ms-flex-wrap: wrap; 
+  	flex-wrap: wrap;
+  	padding: 0px 5px;
+}
+
+column {
+	-ms-flex: 33%;
+  	flex: 33%;
+  	max-width: 33%;
+  	padding: 3px 3px;
+}
+
+column img {
+	margin-top: 8px;
+  	vertical-align: middle;
+  	width: 100%;
+	border-radius: 20px;
+}
+/*ABOUT ENDS*/
+
+/*CONTACT*/
+.alpha img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 25px;
+}
+
+.email {
+	width: 40%;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto;
+	border-radius: 20px;
+	padding: 50px 0px;
+	font-family: 'Red Hat Display', sans-serif;
+} 
+
+.email p {
+	font-size: 32px;
+	text-align: center;
+	padding: 8px;
+}
+
+button {
+  	border-radius: 8px;
+  	font-size: 18px;
+  	height: 52px;
+	margin: 5px 0px;
+ 	cursor: pointer;
+	color: white;
+  	background-color: #a75bd9;
+}
+
+.social_icons {
+	width: 25%;
+	margin: 25px auto;
+}
+
+.social_icons img {
+	width: 35%;
+	height: auto;
+	margin: 0px 25px;
+}
+
+.social_icons img:hover {
+	opacity: 50%;
+}
+/*CONTACT ENDS*/
+
+/*GAMES*/
+.game {
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding-top: 100px;
+}
+
+.game_info {
+	width: 50%;
+	height: auto;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: solid 10px black;
+	border-right: solid 10px black;
+	background-color: white;
+	text-align: center;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+.game_logo {
+	width: 512px;
+	height: 512px;
+	margin: 50px 0px;
+}
+
+.game_info h1 {
+	padding: 25px 0px;
+	font-size: 42px;
+	text-decoration: underline;
+}
+
+.game_info h3 {
+	font-size: 32px;
+}
+
+.game_info p {
+	padding: 25px 150px;
+	font-size: 24px;
+	color: black;
+}
+
+.game_info iframe {
+	width: 600px; 
+	height: 350px;
+}
+
+.game_screenshots img {
+	width: 375px;
+	height: auto;
+	padding: 15px;
+}
+
+.download_badges img{
+	padding: 25px 10px;
+}
+
+#SBW_background {
+	background-image: url("images/SBW/background.png");
+}
+
+#SBW_page {
+	color: #d47c41;
+}
+
+#tinaj_background {
+	background-image: url("images/TINAJ/texture.png");
+}
+
+#tinaj_page {
+	color: #ffa1ef;
+}
+
+#siren_background {
+	background-image: url("images/siren/background.png");
+}
+
+#siren_page {
+	color: #2fa8aa;
+}
+
+#basher_background {
+	background-color: #5650fb;
+}
+
+#basher_page {
+	color: #0097ff;
+}
+
+#wood_background {
+	background-image: url("images/wood/background.png");
+}
+
+#wood_page {
+	color: #ee1c24;
+}
+/*GAMES ENDS*/
+
+/*FOOTER*/
+footer {
+	width: 100%;
+	height: 55px;
+   	left: 0;
+  	bottom: 0;
+	background-color: #222222;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	padding-top: 12px;
+	font-size: 18px;
+	font-family: 'Red Hat Display', sans-serif;
+	color: white;
+}
+/*FOOTER ENDS*/
+
+@media screen and (max-width: 1600px) {
+    .game_logo {
+        width: 60%;
+        height: auto;
+    }
+	
+	.game_screenshots img {
+		width: 40%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.social_icons img {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	
+	/*NAVBAR*/
+	nav {
+		align-items: center;
+	}
+	
+	ul {
+		align-items: center;
+	}
+	
+	li {
+		padding: 0px 0px;
+	}
+	
+	media {
+		display: none;
+	}
+	
+	links a {
+		font-size: 24px;
+	}
+	/*NAVBAR ENDS*/
+	
+	/*INDEX*/
+	.banner .logo img { 
+  		width: 60%;
+	}
+	
+	.game_banner {
+		width: 80%;
+	}
+	
+	.game_banner h1 {
+		font-size: 58px;
+	}
+	/*INDEX ENDS*/
+	
+	/*ABOUT*/
+	about {
+		width: 90%;
+	}
+	
+	column {
+    	-ms-flex: 100%;
+    	flex: 100%;
+    	max-width: 100%;
+	}
+	/*ABOUT ENDS*/
+	
+	/*CONTACT*/
+	.email {
+		width: 90%;
+	} 
+	/*CONTACT ENDS*/
+	
+	/*GAMES*/
+	.game_logo {
+		width: 75%;
+		height: auto;
+	}
+	
+	.game_info {
+		width: 90%;
+	}
+	
+	.game_info p {
+		padding: 25px 25px;
+	}
+	
+	.game_screenshots img {
+		width: 45%;
+		height: auto;
+	}
+	
+	.download_badges img {
+		width: 150px;
+		height: auto;
+		padding: 5px 5px;
+	}
+	/*GAMES ENDS*/
+}
+@media screen and (max-width: 600px) {
+	
+	/*NAVBAR*/
+	.navlogo {
+		display: none;
+	}
+	/*NAVBAR ENDS*/
+	
+	/*INDEX*/	
+	.banner .logo img { 
+  		width: 70%;
+	}
+	
+	.game_banner {
+		width: 100%;
+		border-left: none;
+		border-right: none;
+	}
+	.game_banner h1 {
+		padding-top: 70px;
+		font-size: 41px;
+	}
+	
+	#siren img {
+		width: 350px;
+		height: auto;
+		padding-top: 40px;
+	}
+	/*INDEX ENDS*/
+	
+	/*ABOUT*/
+	section h1 {	
+		font-size: 58px;
+	}
+	
+	about {
+		width: 85%;
+	}
+	/*ABOUT ENDS*/
+	
+	/*CONTACT*/
+	.email {
+		width: 100%;
+		display: block;
+		justify-content: space-around;
+		align-items: center;
+	} 
+	
+	.email p {
+		float: none;
+		font-size: 24px;
+	}
+	
+	button {
+		padding: 0px 10%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		display: block;
+	}
+	
+	.social_icons {
+		display: block
+	}
+	/*CONTACT ENDS*/
+	
+	/*GAMES*/
+	.game_info iframe {
+		width: 300px; 
+		height: 175px;
+	}	
+	/*GAMES END*/
+	
+	/*FOOTER*/
+	footer {
+		font-size: 14px;
+	}
+/*FOOTER ENDS*/
+}

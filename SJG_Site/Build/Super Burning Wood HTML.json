@@ -1,0 +1,16 @@
+{
+"companyName": "Shattered Journal Games",
+"productName": "Super Burning Wood",
+"productVersion": "1.0.3",
+"dataUrl": "Super Burning Wood HTML.data.unityweb",
+"wasmCodeUrl": "Super Burning Wood HTML.wasm.code.unityweb",
+"wasmFrameworkUrl": "Super Burning Wood HTML.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#F7DD8F",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.1.0f2"
+}
